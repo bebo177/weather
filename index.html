@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests" />
+  <link rel="stylesheet" href="./css/all.min.css">
+  <link rel="stylesheet" href="./css/bootstrap.min.css" />
+  <link rel="stylesheet" href="./css/style.css" />
+  <title>Weather Document</title>
+</head>
+
+<body data-bs-spy="scroll" data-bs-target="#navbarSupportedContent">
+
+  <!-- Start Nav -->
+  <nav class="navbar navbar-expand-lg py-4">
+    <div class="container">
+      <a class="navbar-brand d-flex justify-content-center align-items-center" href="#">
+        <img src="./images/logo@2x.png" alt="Logo" class=" me-2">
+        <div class="logo-text">
+          <h1 class="text-white my-2">Weather</h1>
+          <p class="small fw-lighter text-white my-2">tagline goes here</p>
+        </div>
+      </a>
+      <button class="navbar-toggler p-3 rounded-5" type="button" data-bs-toggle="collapse"
+        data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+        aria-label="Toggle navigation">
+        <i class="fa-solid fs-3 fa-bars "></i>
+      </button>
+      <div class="collapse navbar-collapse " id="navbarSupportedContent">
+        <ul class="navbar-nav ms-auto mb-2 ">
+          <li class="nav-item mx-3 py-0">
+            <a class="nav-link px-3 py-1 rounded-pill " aria-current="page" href="#home">Home</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link px-3 py-1 rounded-pill " href="#">News</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link px-3 py-1 rounded-pill " href="#">Live Cameras</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link px-3 py-1 rounded-pill " href="#">Photos</a>
+          </li>
+          <li class="nav-item mx-3">
+            <a class="nav-link px-3 py-1 rounded-pill " href="#contact">Contact</a>
+          </li>
+      </div>
+    </div>
+  </nav>
+  <!-- End Nav -->
+
+  <!-- Start Home -->
+  <section id="" class="home">
+    <div class="image p-4">
+      <div class="container">
+        <div class="inputs mt-5 position-relative">
+          <input type="text" placeholder="Find Your Location..." id="search" class="form-control p-3 rounded-pill">
+          <input type="submit" value="Find" class="btn px-5 text-white rounded-pill">
+        </div>
+      </div>
+    </div>
+    <div class="temp-cards">
+      <div class="container">
+        <div class="row m-auto items-card rounded-3 overflow-hidden">
+          <div class=" m-auto g-0 card-one col-lg-4 ">
+            <div class="day-one d-flex justify-content-between">
+              <p class="p-1 m-1 fw-lighter" id="day"></p>
+              <p class="p-1 m-1 fw-lighter" id="date-of-day"></p>
+            </div>
+            <div class="card-info p-4">
+              <h5 class=" lead text-light text-capitalize" id="city">cairo</h5>
+              <div class="temp-day d-flex align-items-center">
+                <h2 id="temperature">36&deg;C</h2>
+                <img src="./images/113 (1).png" alt="" id="cond-icon" class="ms-5 d-inline-block">
+              </div>
+              <span class="deg-info" id="condition">Sunny</span>
+              <div class="temp-icons d-flex mt-3">
+                <p class="me-3">
+                  <img src="./images/icon-umberella.png" alt="">
+                  <span>20%</span>
+                </p>
+                <p class="me-3">
+                  <img src="./images/icon-wind.png" alt="">
+                  <span>18Km/h</span>
+                </p>
+                <p class="me-3">
+                  <img src="./images/icon-compass.png" alt="">
+                  <span>East</span>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class=" m-auto g-0 card-one col-lg-4 ">
+            <div class="day-two d-flex justify-content-center">
+              <p class="p-1 m-1 fw-lighter" id="second-day"></p>
+            </div>
+            <div class="card-info-two p-4">
+              <div class="temp-day-two d-flex justify-content-center flex-column align-items-center">
+                <img src="./images/113 (1).png" alt="" class="py-3" id="icon-two">
+                <h4 id="max-temp-two">42&deg;C</h4>
+                <h6 id="min-temp-two">24&deg;</h6>
+                <span class="deg-info mb-5" id="cond-two">Sunny</span>
+              </div>
+            </div>
+          </div>
+          <div class=" m-auto g-0 card-one col-lg-4 ">
+            <div class="day-one d-flex justify-content-center">
+              <p class="p-1 m-1 fw-lighter" id="third-day"></p>
+            </div>
+            <div class="card-info p-4">
+              <div class="temp-day d-flex justify-content-center flex-column align-items-center">
+                <img src="./images/113 (1).png" alt="" class="py-3" id="icon-three">
+                <h4 id="max-temp-three">34.5&deg;C</h4>
+                <h6 id="min-temp-three">28.1&deg;</h6>
+                <span class="deg-info mb-5" id="cond-three">Sunny</span>
+              </div>
+            </div>
+          </div>
+
+
+        </div>
+      </div>
+    </div>
+
+
+
+
+
+  </section>
+  <!-- End Home -->
+
+  <!-- Start Footer -->
+  <footer class="p-5">
+    <div class="container">
+      <div class="row ">
+        <div class="inputs position-relative col-md-8">
+          <input type="text" placeholder="Enter Your Email to Subscribe..." id="search"
+            class="form-control p-3 rounded-pill">
+          <input type="submit" value="Subscribe" class="btn px-3 text-white rounded-pill">
+          <p class="text-white small w-75 mx-auto my-3">Copyright 2014 Company name. Designed by Themezy. All rights
+            reserved</p>
+        </div>
+        <div class="foot-icons col-md-4 d-flex justify-content-center align-items-baseline">
+          <ul class="list-unstyled d-flex justify-content-center  ">
+            <li class="mx-1 p-2"><i class="fa-brands fa-facebook-f"></i></li>
+            <li class="mx-1 p-2"><i class="fa-brands fa-twitter"></i></li>
+            <li class="mx-1 p-2"><i class="fa-brands fa-google-plus-g"></i></li>
+            <li class="mx-1 p-2"><i class="fa-brands fa-pinterest"></i></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </footer>
+  <!-- End Footer -->
+
+  <script src="./js/bootstrap.bundle.min.js"></script>
+  <script src="./js/main.js"></script>
+</body>
+
+</html>
